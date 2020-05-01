@@ -1,6 +1,4 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
-using System.Reflection;
 
 namespace AlgorithmicsUnitTest
 {
@@ -42,44 +40,7 @@ namespace AlgorithmicsUnitTest
         [TestMethod]
         public void FrogJmp()
         {
-            //Algorithmics.Codility.FrogJmp.Solution();
-        }
-
-        [TestMethod]
-        public void Test()
-        {
-            string p1 = "", p2;
-            var r = MyMethod(ref p1, out p2);
-
-            //var type = typeof(UnitTest1);
-            //var attribute = type.GetCustomAttribute<TestClassAttribute>();
-            //var s = Attribute.GetCustomAttribute(typeof(UnitTest1), typeof(TestClassAttribute));
-            //var w = Attribute.GetCustomAttribute(typeof(UnitTest1), typeof(TestClassAttribute));
-        }
-
-        public string MyMethod(ref string p1, out string p2)
-        {
-            p2 = "";
-            return "";
+            Algorithmics.Codility.FrogJmp.Solution(10, 30, 5);
         }
     }
-
-    public static class ClaseTestDelegates
-    {
-        public delegate void AuthCallback(bool validUser);
-        public static AuthCallback loginCallback = Login;
-
-        public static void Login(bool ss)
-        {
-            Console.WriteLine("Valid user!");
-        }
-
-        public static void BB()
-        {
-            loginCallback(true);
-        }
-    }
-
-
-
 }
