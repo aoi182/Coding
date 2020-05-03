@@ -1,11 +1,13 @@
-﻿using System;
+﻿using System.Collections.Generic;
+using System.Linq;
+using DesignPatterns.SOLID.OCP;
 using DesignPatterns.SOLID.SRP;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace DesignPatternUnitTest
 {
     [TestClass]
-    public class UnitTest1
+    public class SOLID_SRP_UnitTest
     {
         [TestMethod]
         public void SOLID_SRP_Test()

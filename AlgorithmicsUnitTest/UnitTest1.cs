@@ -5,13 +5,8 @@ namespace AlgorithmicsUnitTest
     [TestClass]
     public class UnitTest1
     {
-        public delegate void ResultCallback(int responseCode);
-
-        public delegate void ResultCallbacks(int responseCode);
-
-
         [TestMethod]
-        public void BinaryGap()
+        public void BinaryGapTest()
         {
             Assert.AreEqual(Algorithmics.Codility.BinaryGap.Solution(9), 2);
             Assert.AreEqual(Algorithmics.Codility.BinaryGap.Solution(529), 4);
@@ -22,7 +17,7 @@ namespace AlgorithmicsUnitTest
         }
 
         [TestMethod]
-        public void CyclicRotation()
+        public void CyclicRotationTest()
         {
             Assert.IsTrue(HelperTest.AreEqual(Algorithmics.Codility.CyclicRotation.Solution(new int[] { 3, 8, 9, 7, 6 }, 1), new int[] { 6, 3, 8, 9, 7 }));
             Assert.IsTrue(HelperTest.AreEqual(Algorithmics.Codility.CyclicRotation.Solution(new int[] { 3, 8, 9, 7, 6 }, 3), new int[] { 9, 7, 6, 3, 8 }));
@@ -31,16 +26,22 @@ namespace AlgorithmicsUnitTest
         }
 
         [TestMethod]
-        public void OddOccurrencesInArray()
+        public void OddOccurrencesInArrayTest()
         {
             Assert.AreEqual(Algorithmics.Codility.OddOccurrencesInArray.Solution2(new int[] { 9, 3, 9, 3, 9, 7, 9 }), 7);
             Assert.AreEqual(Algorithmics.Codility.OddOccurrencesInArray.Solution2(new int[] { 5 }), 5);
         }
 
         [TestMethod]
-        public void FrogJmp()
+        public void FrogJmpTest()
         {
             Algorithmics.Codility.FrogJmp.Solution(10, 30, 5);
+        }
+
+        [TestMethod]
+        public void TapeEquilibriumTest()
+        {
+            Algorithmics.Codility.TapeEquilibrium.Solution(new int[] { 3, 1, 2, 4, 3 });
         }
     }
 }
