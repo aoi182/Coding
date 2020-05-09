@@ -50,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="HelperTest.cs" />
+    <Compile Include="SOLID_LP_UnitTest.cs" />
     <Compile Include="SOLID_SRP_UnitTest.cs" />
     <Compile Include="SOLID_OCP_UnitTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
